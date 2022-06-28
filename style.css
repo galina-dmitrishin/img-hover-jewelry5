@@ -127,4 +127,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-
+@media (max-width: 767px) {
+    .container-flex {
+        flex-wrap: wrap;
+    }
+    .wrap-img {
+        width: 50%;
+        flex: 1 1 40%;
+    }
+    .image--hover-test:active img {
+        animation-name: loadBlur;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;    
+        visibility: visible;
+    }
+}
